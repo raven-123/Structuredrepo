@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="testNG.DemoAnottaions2"/>
+      <class name="testNG.Asserstions"/>
+      <class name="testNG.DataProvider"/>
+      <class name="testNG.Parameters"/>
+      <class name="testNG.NewTest2"/>
+      <class name="testNG.Groups"/>
+      <class name="testNG.TestNgDemo"/>
+      <class name="testNG.DeMoA"/>
+      <class name="testNG.DemoA1"/>
+      <class name="testNG.Priority"/>
+      <class name="testNG.AnnotationsDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="testNG.Asserstions">
+        <methods>
+          <include name="test1"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- testNG.Asserstions -->
+      <class name="testNG.DemoAnottaions2">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="AfterTest"/>
+          <include name="beforeSutie"/>
+          <include name="beforMethod"/>
+          <include name="beforeTest"/>
+          <include name="bEforeClass"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- testNG.DemoAnottaions2 -->
+      <class name="testNG.Parameters">
+        <methods>
+          <include name="mytest"/>
+        </methods>
+      </class> <!-- testNG.Parameters -->
+      <class name="testNG.DeMoA">
+        <methods>
+          <include name="logOut"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testNG.DeMoA -->
+      <class name="testNG.AnnotationsDemo">
+        <methods>
+          <include name="logOut"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testNG.AnnotationsDemo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
